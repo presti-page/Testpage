@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #111;
+  color: #eee;
+  text-align: center;
+}
+
+header {
+  padding: 60px 20px;
+  background: linear-gradient(45deg, #0f0f0f, #1e1e1e);
+}
+
+.cta-button {
+  padding: 12px 24px;
+  background: #2196F3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.features, #plans {
+  padding: 40px 20px;
+}
+
+.plan-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+footer {
+  padding: 20px;
+  background: #000;
+  font-size: 14px;
+}

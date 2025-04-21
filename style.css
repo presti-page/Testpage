@@ -44,3 +44,17 @@ footer {
   background: #000;
   font-size: 14px;
 }
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #0088cc; /* Telegram blue */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #006699;
+}

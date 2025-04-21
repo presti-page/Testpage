@@ -1,60 +1,111 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #111;
-  color: #eee;
-  text-align: center;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
 }
 
 header {
+  background: #111;
+  color: #fff;
+  text-align: center;
   padding: 60px 20px;
-  background: linear-gradient(45deg, #0f0f0f, #1e1e1e);
 }
 
 .cta-button {
-  padding: 12px 24px;
-  background: #2196F3;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 20px;
-  display: inline-block;
-}
-
-.features, #plans {
-  padding: 40px 20px;
-}
-
-.plan-grid {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.plan {
-  background: #222;
-  padding: 20px;
-  border-radius: 10px;
-  width: 200px;
-}
-
-footer {
-  padding: 20px;
-  background: #000;
-  font-size: 14px;
-}
-.cta-button {
   display: inline-block;
   padding: 12px 24px;
-  background: #0088cc; /* Telegram blue */
+  background: #0088cc;
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
   transition: background 0.3s;
+  margin-top: 20px;
 }
 
 .cta-button:hover {
   background: #006699;
+}
+
+.features {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+#plans {
+  padding: 40px 20px;
+  background: #e9ecef;
+  text-align: center;
+}
+
+.plan-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.plan {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Telegram Floating Chat Bubble */
+#telegram-chat-link {
+  text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+#telegram-chat-bubble {
+  display: flex;
+  align-items: center;
+  background: #0088cc;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+#telegram-chat-bubble:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.telegram-icon img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.telegram-bubble-text p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
 }

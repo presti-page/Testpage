@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>StreamFlex | Global Entertainment Platform</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
     <h1>StreamFlex</h1>
     <p>Your portal to global digital entertainment.</p>
@@ -44,22 +45,20 @@
   </section>
 
   <footer>
-    <a href="https://t.me/streamflex1bot" target="_blank" class="cta-button">
-      Chat with Support on Telegram
-    </a>
     <p>&copy; 2025 StreamFlex | Terms | Privacy</p>
   </footer>
 
-  <!-- Optional Telegram Widget (you can remove this if you're just using the button) -->
-  <!-- 
-  <script async src="https://telegram.org/js/telegram-widget.js?7"
-          data-telegram-login="streamflex1bot"
-          data-size="large"
-          data-radius="10"
-          data-auth-url=""
-          data-request-access="write">
-  </script>
-  -->
+  <!-- Floating Telegram Chat Bubble -->
+  <a href="https://t.me/streamflex1bot" target="_blank" id="telegram-chat-link" title="Chat with Support">
+    <div id="telegram-chat-bubble">
+      <div class="telegram-icon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" />
+      </div>
+      <div class="telegram-bubble-text">
+        <p>Need help? Chat with us!</p>
+      </div>
+    </div>
+  </a>
 
 </body>
 </html>
